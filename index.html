@@ -194,6 +194,80 @@
             color: #333;
         }
 
+        /* Meet Sravan Section */
+        .meet-sravan {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+        }
+
+        .sravan-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .sravan-image {
+            text-align: center;
+        }
+
+        .sravan-image img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .sravan-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .sravan-text h2 .highlight {
+            color: #f1c40f;
+        }
+
+        .sravan-subtitle {
+            font-size: 1.2rem;
+            color: #bdc3c7;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        .sravan-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #ecf0f1;
+        }
+
+        .save-seat-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #f1c40f 0%, #f39c12 100%);
+            color: #2c3e50;
+            padding: 20px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-top: 1rem;
+            text-transform: uppercase;
+        }
+
+        .save-seat-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(241,196,15,0.4);
+        }
+
+        .registration-note {
+            font-size: 0.9rem;
+            color: #bdc3c7;
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+
         /* Testimonials */
         .testimonials {
             padding: 80px 0;
@@ -255,6 +329,15 @@
             color: white;
         }
 
+        .disclaimer {
+            background: #f1f1f1;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #667eea;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .nav-links {
@@ -272,15 +355,24 @@
             .section-title {
                 font-size: 2rem;
             }
-        }
 
-        .disclaimer {
-            background: #f1f1f1;
-            padding: 20px;
-            margin: 20px 0;
-            border-left: 4px solid #667eea;
-            font-size: 0.9rem;
-            color: #666;
+            .sravan-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .sravan-text h2 {
+                font-size: 2rem;
+            }
+
+            .sravan-text p {
+                font-size: 1rem;
+            }
+
+            .save-seat-button {
+                padding: 15px 30px;
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
@@ -384,6 +476,38 @@
                     <div class="feature-icon">🤝</div>
                     <h3>Community Support</h3>
                     <p>Join a community of like-minded individuals on their journey to personal transformation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Sravan Section -->
+    <section class="meet-sravan">
+        <div class="container">
+            <div class="sravan-content">
+                <div class="sravan-image">
+                    <img src="/api/placeholder/400/500" alt="Meet Sravan Varanasi - Brain and Business Coach" />
+                </div>
+                <div class="sravan-text">
+                    <h2>Meet <span class="highlight">Sravan Varanasi</span></h2>
+                    <p class="sravan-subtitle">Brain and Business Coach</p>
+                    
+                    <p>Sravan worked as a Data Migration consultant in top leading MNCs for 8 years and his passion towards training/coaching/speaking led him to take the personal development journey which started with memory training, cognitive functions, and motivation.</p>
+                    
+                    <p><strong>He has trained almost 15K students and professionals.</strong></p>
+                    
+                    <p>His work got appreciation from legendary people like PadmaVibhushan Mega Star Chiranjeevi Garu, Manisha Koirala, Jaya Prakash Narayana garu, V. V. Lakshminarayana garu and many more celebrities.</p>
+                    
+                    <p>He helps business owners to scale up their business through his unique marketing and sales strategies.</p>
+                    
+                    <p>He also helped thousands of people to become mentally strong so that they could live happy, successful and fulfilling life.</p>
+                    
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <a href="https://knowtheedge.com/mmm" class="save-seat-button">
+                            SAVE MY SEAT NOW FOR ₹199
+                        </a>
+                        <p class="registration-note">Registration Is Limited!</p>
+                    </div>
                 </div>
             </div>
         </div>
